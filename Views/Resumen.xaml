@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="econradoExamen.Views.Resumen"
+             Title="Resumen">
+    <VerticalStackLayout>
+        <Label 
+             Text="Registro"
+             HorizontalOptions="Center"
+             TextColor="Red"
+             FontSize="20"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre:"
+           FontSize="12"
+           Grid.Row="0"
+           Grid.Column="0"></Label>
+            <Label x:Name="lblNombre"
+           FontSize="12"
+           Grid.Row="0"
+           Grid.Column="1"></Label>
+
+            <Label Text="Apellido:"
+           FontSize="12"
+           Grid.Row="1"
+           Grid.Column="0"></Label>
+            <Label x:Name="lblApellido"
+           FontSize="12"
+           Grid.Row="1"
+           Grid.Column="1"></Label>
+
+            <Label Text="Edad:"
+           FontSize="12"
+           Grid.Row="2"
+           Grid.Column="0"></Label>
+            <Label x:Name="lblEdad"
+           FontSize="12"
+           Grid.Row="2"
+           Grid.Column="1"></Label>
+
+            <Label Text="Fecha:"
+           FontSize="12"
+           Grid.Row="3"
+           Grid.Column="0"></Label>
+            <Label x:Name="lblFecha"
+           FontSize="12"
+           Grid.Row="3"
+           Grid.Column="1"></Label>
+
+            <Label Text="Ciudad:"
+           FontSize="12"
+           Grid.Row="4"
+           Grid.Column="0"></Label>
+            <Label x:Name="lblCiudad"
+           FontSize="12"
+           Grid.Row="4"
+           Grid.Column="1"></Label>
+
+            <Label Text="País:"
+           FontSize="12"
+           Grid.Row="5"
+           Grid.Column="0"></Label>
+            <Label x:Name="lblPais"
+           FontSize="12"
+           Grid.Row="5"
+           Grid.Column="1"></Label>
+
+            <Label Text="Monto Inicial:"
+           FontSize="12"
+           Grid.Row="6"
+           Grid.Column="0"></Label>
+            <Label x:Name="lblMontoInicial"
+           FontSize="12"
+           Grid.Row="6"
+           Grid.Column="1"></Label>
+
+            <Label Text="Pago mensual:"
+           FontSize="12"
+           Grid.Row="7"
+           Grid.Column="0"></Label>
+            <Label x:Name="lblPagoMensual"
+           FontSize="12"
+           Grid.Row="7"
+           Grid.Column="1"></Label>
+
+            <Label Text="Pago Total:"
+           FontSize="12"
+           Grid.Row="8"
+           Grid.Column="0"></Label>
+            <Label x:Name="lblPagoTotal"
+           FontSize="12"
+           Grid.Row="8"
+           Grid.Column="1"></Label>
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

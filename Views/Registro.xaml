@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="econradoExamen.Views.Registro"
+             Title="Registro">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20"
+                         Padding="20">
+            <Label x:Name="lblUsuario"
+            Text=""
+            HorizontalOptions="End" />
+            <Label 
+             Text="Registro"
+             HorizontalOptions="Center"
+             TextColor="Red"
+             FontSize="20"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Fecha:"
+                       FontSize="12"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       ></Label>
+                <DatePicker x:Name="pckFecha"
+                            Grid.Row="0"
+                            Grid.Column="1"></DatePicker>
+                <Label Text="Paìs"
+                       FontSize="12"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                 ></Label>
+                <Picker
+                    x:Name="pckPais"
+                    FontSize="12"
+                    Grid.Row="1"
+                    Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Ecuador</x:String>
+                        <x:String>Francia</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Ciudad"
+                       FontSize="12"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                 ></Label>
+                <Picker
+                    x:Name="pckCiudad"
+                    FontSize="12"
+                    Grid.Row="2"
+                    Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Quito</x:String>
+                        <x:String>Paris</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Monto"
+                       FontSize="12"
+                       Grid.Row="3"
+                       Grid.Column="0"
+                 ></Label>
+                <Entry x:Name="txtMonto"
+                       FontSize="12"
+                        Grid.Row="3"
+                        Grid.Column="1"></Entry>
+                <Button x:Name="btnCalcular"
+                        Text="Calcular pago mensual"
+                        Clicked="btnCalcular_Clicked"
+                        Grid.Row="4"
+                        Grid.Column="0"></Button>
+                <Entry x:Name="txtMontoCalculado"
+                       FontSize="12"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                       IsEnabled="False"></Entry>
+            </Grid>
+            <Label Text="____________________________"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre"
+                       Grid.Row="0"
+                       Grid.Column="0"></Label>
+                <Label Text="Apellido"
+                       Grid.Row="0"
+                       Grid.Column="1"></Label>
+                <Label Text="Edad"
+                       Grid.Row="0"
+                       Grid.Column="2"
+                       ></Label>
+                <Entry x:Name="txtNombre"
+                       Grid.Row="1"
+                       Grid.Column="0"></Entry>
+                <Entry x:Name="txtApellido"
+                       Grid.Row="1"
+                       Grid.Column="1"></Entry>
+                <Entry x:Name="txtEdad"
+                       Grid.Row="1"
+                       Grid.Column="2"></Entry>
+            </Grid>
+            <Button x:Name="btnResumen"
+                    Text="Ver resumen"
+                    Clicked="btnResumen_Clicked"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
